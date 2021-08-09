@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main() 
+{
+    printf("What you want?\n");
+    printf("Enter your order number between 1-5\n");
+    int ch;
+    scanf("%d",&ch);
+    switch(ch)
+    {
+        case 1:printf("Food Item:French Fries\n price: Rs 99");
+        break;
+        case 2: printf("Food Item:Sandwich\n price:Rs 149");
+        break;
+        case 3: printf("Food Item:Pizza\n price: Rs 239");
+        break;
+        case 4: printf("Food Item:Burger\n price:Rs 129");
+        break;
+        case 5: printf("Food Item:Pasta\n price:Rs 179");
+        break;
+        defualt:
+        printf("Not Available");
+    }
+}
