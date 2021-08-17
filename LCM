@@ -1,0 +1,26 @@
+#include<stdio.h>
+
+int lcm(int, int);   
+
+int main()
+{
+    int a, b, l;
+    printf("Enter 2 integers to find LCM of:\n");
+    scanf("%d", &a);
+    scanf("%d", &b);
+    l = lcm(a,b);    
+    printf(" LCM is: %d",  l);
+    return 0;
+}
+
+int lcm(int a, int b)  // function definition
+{
+     static int i = 1;    
+    if(i%a == 0 && i%b == 0)
+        return (i);
+        
+        i++;
+        lcm(a,b);
+        return (i);
+    
+}
