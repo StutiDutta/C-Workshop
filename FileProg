@@ -1,0 +1,31 @@
+#include<stdio.h>
+int main()
+{
+      FILE *fp;
+      char ch;
+      int i,pos;
+      fp=fopen("Firstfile.txt","r");
+      fseek(fp,0,SEEK_END);
+      pos=ftell(fp);
+      //printf("Current postion is %d\n",pos);
+      
+     for(i=n-1;i>=0;i--)
+      rev.push_back(str[i]);
+      return 0;
+}
+//link: https://www.tutorialride.com/c-files-io-programs/create-text-file-print-content-in-reverse-order.htm
+// A simple C++ program to reverse string using constructor
+#include <bits/stdc++.h>
+using namespace std;
+int main(){
+ 
+    string str = "GeeksforGeeks";
+    int n=str.length();
+    //Temporary string to store the reverse
+    string rev;
+    for(int i=n-1;i>=0;i--)
+      rev.push_back(str[i]);
+   
+    cout<<rev<<endl;
+    return 0;
+}
