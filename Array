@@ -1,0 +1,31 @@
+#include <stdio.h>
+
+int main() 
+{
+    int a[3][3];
+    int **b, i,j;
+    int s=0;
+    b=&a;
+    for(i=0;i<3;i++)
+    {
+        for(j=0;j<3;j++)
+        scanf("%d", (b+i));
+    }
+    printf("Elements are:");
+    for(i=0;i<3;i++)
+    {
+        for(j=0;j<3;j++)
+        printf("%d \t", *(*(b+i)+j));
+        printf("\n");
+    }
+    // sum of diagonal elements
+     for(i=0;i<3;i++)
+    {
+        for(j=0;j<3;j++)
+        {
+            if(i==j)
+            s=s+a[i][j];
+        }
+    }
+    printf("Sum is %d", s);
+}
